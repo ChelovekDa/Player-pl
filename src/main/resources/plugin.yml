@@ -1,0 +1,33 @@
+name: Player
+version: '1.0'
+main: ru.hcc.player.Player
+api-version: '1.21'
+description: Плагин для музыки.
+prefix: PlayerPlugin
+author: "English (aka Horoshiy)"
+website: https://discordapp.com/users/507783634640568331/
+
+permissions:
+
+  player.music.*:
+    description: Открывает доступ ко всем подкомандам /music.
+    default: op
+
+  player.music.create:
+    description: Открывает доступ к созданию музыки.
+    default: op
+
+  player.music.play:
+    description: Открывает доступ к воспроизведению музыки.
+    default: op
+
+  player.music.stop:
+    description: Открывает доступ к остановке музыки.
+    default: op
+
+commands:
+
+  music: {
+    permission: player.music.*,
+    usage: "Использование: /music [create|play|stop]",
+    permission-message: У вас нет разрешения для использования этой команды. }
