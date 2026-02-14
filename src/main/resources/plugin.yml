@@ -1,33 +1,32 @@
-name: Player
-version: '1.0'
+name: PlayerPlugin
+version: '1.1'
 main: ru.hcc.player.Player
 api-version: '1.21'
-description: Плагин для музыки.
+description: A plugin for playing music from server-side texture packs and classic games.
 prefix: PlayerPlugin
-author: "English (aka Horoshiy)"
+author: English (aka Horoshiy)
 website: https://discordapp.com/users/507783634640568331/
 
 permissions:
 
   player.music.*:
-    description: Открывает доступ ко всем подкомандам /music.
+    description: Get access to a command /music.
     default: op
 
   player.music.create:
-    description: Открывает доступ к созданию музыки.
+    description: Get access to creating the music.
     default: op
 
   player.music.play:
-    description: Открывает доступ к воспроизведению музыки.
+    description: Get access to playing the music.
     default: op
 
   player.music.stop:
-    description: Открывает доступ к остановке музыки.
+    description: Get access to stoping the music.
     default: op
 
 commands:
-
   music: {
     permission: player.music.*,
-    usage: "Использование: /music [create|play|stop]",
-    permission-message: У вас нет разрешения для использования этой команды. }
+    usage: "Usage: /music [create|play|stop]",
+    permission-message: You don't have access to using this command. }
